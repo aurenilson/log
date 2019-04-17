@@ -1,0 +1,24 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Ubuntu');
+:root { --cor-primaria: #00e1e8; --cor-secundaria: #695eff; --cor-terceira: #b247ed; }   /* var(--cor-primaria); var(--cor-secundaria) */
+
+* { font-family: 'Ubuntu', sans-serif; font-size: 14px; letter-spacing: 0.3px; line-height : 20px; box-sizing: border-box; }
+body, html { border: 0px; margin: 0px; padding: 0px; color:#666666; }
+h1, h2, h3, h4, h5, h6 { text-transform: uppercase; margin: 0 0 8px 0; margin-bottom: 0px !important; color: var(--cor-secundaria); font-weight: 700}
+h1, h2 { font-size: 28px !important; font-weight: 700; }
+
+#app { width: 100%; height: 100vh; border: 0px; padding: 0px}
+
+.uk-input, .uk-button { border-radius: 5px !important}
+
+/* Cor dos botões */
+.uk-button-primary { background-color: var(--cor-secundaria) !important }
+.uk-navbar-container { background-color: var(--cor-primaria) !important }
+
+/* Cores de fontes */
+.fd-color-branco { color: #FFFFFF !important;}
+.fd-color-primaria { color: var(--cor-primaria) !important;}
+.fd-color-secundaria { color: var(--cor-secundaria) !important;}
+.fd-color-terceira { color: var(--cor-terceira) !important;}
+
+.fd-gradient { background: var(--cor-secundaria); background: -moz-linear-gradient(left, var(--cor-secundaria) 0%, var(--cor-terceira) 100%); background: -webkit-gradient(left top, right top, color-stop(0%, var(--cor-secundaria)), color-stop(100%, var(--cor-terceira))); background: -webkit-linear-gradient(left, var(--cor-secundaria) 0%, var(--cor-terceira) 100%); background: -o-linear-gradient(left, var(--cor-secundaria) 0%, var(--cor-terceira) 100%); background: -ms-linear-gradient(left, var(--cor-secundaria) 0%, var(--cor-terceira) 100%); background: linear-gradient(to right, var(--cor-secundaria) 0%, var(--cor-terceira) 100%); filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#695eff', endColorstr='#b347ed', GradientType=1 );}

@@ -1,0 +1,51 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Logmi</title>
+        <meta charset="utf-8">
+        <meta content="width=device-width,initial-scale=1,minimal-ui" name="viewport">
+        <!-- UIkit CSS -->
+        <link rel="stylesheet" href="./assets/css/uikit.min.css" />
+        <link rel="stylesheet" href="./assets/css/app.css" type="text/css">
+        <link rel="stylesheet" href="./assets/css/animate.min.css">  
+
+    </head>
+
+    <body>
+
+        <div id="app">
+            <div v-if="location.href.indexOf('/app') != -1">
+                <fdheader></fdheader>
+                    <router-view class="animated fadeInLeft "></router-view>
+                <fdfooter></fdfooter>
+            </div>
+            <div v-else>
+                <router-view class="animated fadeIn "></router-view>
+            </div>
+        </div>
+        
+        <!-- Vuejs -->
+        <script src="./assets/js/vue.min.js"></script>
+        <script src="./assets/js/vue-router.js"></script>
+
+        <!-- UIkit JS -->
+        <script src="./assets/js/uikit.min.js"></script>
+        <script src="./assets/js/uikit-icons.min.js"></script>
+
+        <!-- Dependencias -->
+        <script src="./components/app-splash-screen.js"></script>
+        <script src="./components/app-login.js"></script>
+        <script src="./components/app-cadastro.js"></script>
+        <script src="./components/app-cadastro-regiao.js"></script>
+        <script src="./components/app-cadastro-tipo.js"></script>
+        <script src="./components/app-cadastro-entregas.js"></script>
+
+        <script src="./components/app-main.js"></script>
+        <script src="./components/app-header.js"></script>
+        <script src="./components/app-footer.js"></script>
+        
+        <!-- Aplicação -->
+        <script src="./main.js" ></script>
+
+    </body>
+</html>
